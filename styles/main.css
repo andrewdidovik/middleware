@@ -1,0 +1,451 @@
+/*
+* main CSS
+*/
+*{
+	padding:0;
+	margin:0;
+}
+
+html,body{
+	width:100%;
+	height:100%;
+}
+
+body{
+	min-height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-style: normal;
+}
+
+
+a{
+	cursor:pointer;
+	text-decoration: none;
+	color:#fff;
+}
+
+li{
+	list-style-type: none;
+}
+
+input{
+	border: 2px solid #fff;
+	border-radius: 5px;
+	color: #fff;
+	background-color: rgba(0,0,0,0);
+	width: 150px;
+	float: left;
+	margin-right: 10px;
+	margin-top: 30px;
+	font-size: 16px;
+	padding: 6px 5px;
+}
+
+input:focus{
+	outline: none;
+}
+
+
+.in{
+	max-width: 980px;
+	margin: 0 auto;
+	padding: 10px 20px 0 20px;
+	box-sizing: border-box;
+}
+
+/*
+* top part
+*/
+
+.header{
+	width:100%;
+	height:100%;
+	background:url(../images/bg.jpg) no-repeat;
+	display: inline-block;
+	background-size: 100% 100%;
+}
+
+.header .line_block{
+	width: 100%;
+	margin: 0 auto;
+	display: inline-block;
+	/*height: 5em;*/
+	/*text-align: center;*/
+}
+
+.header .line_block .logo{
+	width: 25%;
+	float: left;
+	cursor:pointer;
+}
+
+.header .line_block .API{
+	width: 20%;
+	float: right;
+	color: #fff;
+	font-size: 16px;
+	margin-top: 10px;
+	padding-top: 30px;
+}
+
+.left_API{
+	float:left !important;
+	margin: 0 0 0 50px;
+}
+
+.header .line_block .enter{
+	background: #fff;
+	float: right;
+	margin: 20px 0;
+	font-size: 26px;
+	color: #0d73ba;
+	padding: 0.25em 1em;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.header .line_block .google{
+	background: url(../images/google_red.png) no-repeat 100% 100%;
+	float: right;
+	cursor: pointer;
+	width:268px;
+	height: 58px;
+	margin: 20px 0;
+}
+
+.header .line_block .login{
+	float: right;
+	width:450px;
+}
+
+.header .line_block .login .enter{
+	background: #f7b969;
+	float: right;
+	margin: 30px 0;
+	font-size: 18px;
+	color: #aa6d29;
+	padding: 0.25em 1em;
+	border-radius: 5px;
+	cursor: pointer;
+	border-bottom: 2px solid #bb7c34;
+}
+
+.header .line_block .info{
+	width:30%;
+	float:left;
+}
+
+.header .line_block .info_line{
+	font-size: 14px;
+	font-weight: 400;
+	color: #d1d1d1;
+	margin: 5px 0;
+}
+
+.header .line_block .info_line span{
+	color: #fff;
+}
+
+.header .line_block .text{
+	color: #fff;
+	font-size: 43px;
+	text-align: right;
+}
+
+.slide_container{
+	width:100%;
+	height: 300px;
+	position: relative;
+	/*background: url(../images/setko.png) no-repeat 100% 100%;*/
+}
+
+[rel="net1"]{
+	background: url(../images/setko.png),url(../images/slide2net.png) no-repeat;
+	background-size: 100%;
+	background-position: 100% 100%,35% 75%;
+}
+
+[rel="net2"]{
+	background: url(../images/setko.png),url(../images/slide3net.png) no-repeat;
+	background-size: 100%;
+	background-position: 100% 100%,35% 75%;
+}
+
+[rel="net3"]{
+	background: url(../images/setko.png),url(../images/slide1net.png) no-repeat;
+	background-size: 100%;
+	background-position: 100% 100%,35% 75%;
+}
+
+.slide{
+	width: 100%;
+	min-height: 100%;
+	background-position: 100% 75%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.slider{
+	width: 100%;
+	padding: 10px;
+	/*display:inline-block;*/
+	text-align: center;
+	margin-top: 5%;
+}
+
+.header .title{
+	width:250px;
+	color:#fff;
+	font-size: 18px;
+	float:left;
+	margin: 0 10px;
+}
+
+.title_container{
+	/*width:50%;*/
+	/*float:left;*/
+	/*margin: 0 auto;*/
+	/*position: relative;*/
+	display: inline-block;
+	/*min-width: 300px;*/
+}
+
+.title.left{
+	background-image: -webkit-gradient(
+	linear,
+	right center, left center,
+	from(rgba(255, 255, 255, 1)),
+	to(rgba(255, 255, 255, 0))
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+	margin: 0 20px 0 0;
+	text-align: right;
+
+	line-height: 18px;
+
+	/*width: auto;
+
+	position: absolute;*/
+			
+}
+
+.title.right{
+	background-image: -webkit-gradient(
+	linear,
+	left center, right center,
+	from(rgba(255, 255, 255, 1)),
+	to(rgba(255, 255, 255, 0.2))
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+	margin: 0 0 0 15px;
+	text-align: left;
+
+	line-height: 18px;
+
+	/*width: auto;
+
+	position: absolute;*/
+		
+}
+
+.title_center{
+	font-size: 22px;
+	line-height: 15px;
+	float: left;
+	color: #fff;
+	margin: 0 15px 0 10px;
+	height: 40px;
+	width:250px;
+	
+	/*-webkit-transition: width 0.5s ease-in-out;
+    -moz-transition: width 0.5s ease-in-out;
+    -o-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+
+    min-width:50px; 
+    width:0%; */
+}
+
+/*.title_center.expanded { 
+	width:initial;
+}*/
+
+/*.title_center:hover { 
+    width:80%;   
+}*/
+
+.arrow_left{
+	background: url(../images/slideleft.png) no-repeat;
+	float:left;
+	width: 20px;
+	height: 20px;
+	cursor:pointer;
+}
+
+.arrow_right{
+	background: url(../images/slideright.png) no-repeat;
+	float:left;
+	width: 20px;
+	height: 20px;
+	cursor:pointer;
+}
+
+
+/*
+* main part
+*/
+.content{
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.content .title{
+	font-size: 32px;
+	margin: 65px 0 0 20px;
+}
+
+.block_container{
+	padding:5px;
+	display:inline-block;
+}
+
+.block_container .block{
+	float:left;
+	width: 31%;
+	margin: 0 10px;
+	text-align: center;
+}
+
+.more_container {
+	min-height: 50px;
+	margin: 50px 35px 0 0;
+}
+
+.more_container .more{
+	border:1px solid #90d895;
+	border-radius: 20px;
+	color:#59985d;
+	font-size: 14px;
+	padding:10px 20px;
+	cursor:pointer;
+	float:right;
+}
+
+.more_container .more:hover{
+	background:#90d895;
+	color:#fff;
+}
+
+.video{
+	width: 90%;
+	margin: 50px 20px 80px auto;
+}
+
+.clients{
+	background: url(../images/our_clients.png) no-repeat;
+	width: 100%;
+	height: 100px;
+	background-position: 12px;
+	margin-bottom: 50px;
+}
+
+/*.content img{
+	width:50%;
+	height: 50%;
+
+}*/
+
+
+/*
+* bottom part
+*/
+.footer{
+	width:100%;
+	height:100px;
+	background:url(../images/bg_footer.png) no-repeat;
+	/*display: inline-block;*/
+	background-size: 100% 100%;
+	color:#fff;
+}
+
+.footer .in{
+	padding-top: 45px;
+}
+
+.footer .copyright{
+	font-size: 12px;
+	float:left;
+	margin-left: 20px;
+}
+
+.footer .API{
+	float:right;
+	margin:0 0 0 20px;
+}
+
+
+
+/*
+API
+*/
+
+.api_header{
+	height:100px;
+	background-size: 100%;
+}
+
+.api_more{
+	float: left !important;
+	margin-right: 20px;
+}
+
+.api_more_active{
+	background:#90d895;
+	color:#fff;
+}
+
+.menu{
+	float:left;
+	width:30%;
+	height: 100%;
+
+}
+
+li.main{
+	padding: 10px;
+	font-weight: 300;
+}
+
+
+
+
+@media only screen and (min-width: 1382px) {
+	.slide_container{
+		height: 550px;
+	}
+
+	.slide {
+		background-position: 45% 250%;
+		background-size: 120%;
+	}
+
+	.slider {
+		margin-top: 80px;
+	}
+
+	[rel='net1'], [rel='net2'], [rel='net3']{
+		background-size: 120%;
+		background-position: 100% 100%,45% 250%;
+	}
+}
+
+
+
+
+
+
